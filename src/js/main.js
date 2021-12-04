@@ -14,7 +14,7 @@ const experience = experienceWrapper.querySelector('.experience');
 const experiencePadder = experienceWrapper.querySelector('.experience-padder');
 const panels = experienceWrapper.querySelectorAll('.panel');
 const timeline = gsap.timeline({ duration: 100, paused: true }); // set up a 100s timeline
-const tlShine = new gsap.timeline({ repeat: -1, repeatDelay: 3 });
+const tlShine = new gsap.timeline({ repeat: -1, repeatDelay: 1.5 });
 
 let resizeStuff = () => {
 	let onePanelHeight = panels[0].offsetHeight; // just ask the first panel how tall it is, to find what CSS has currently calculated its height to be
@@ -55,16 +55,16 @@ timeline.to(
 	},
 	0
 ); // starts at the 1 second mark
-tlShine.to(['#shine1', '#shine2'], {
-	duration: 0.8,
-	x: '100vw',
-	ease: 'power1.in',
-});
-tlShine.set(['#shine1', '#shine2'], { x: '-100vw' });
-tlShine.to(['#shine1', '#shine2'], {
-	duration: 0.5,
-	x: '0vw',
-	ease: 'power1.out',
-});
+tlShine.fromTo(
+	['#shine1', '#shine2'],
+	{
+		x: '-100vw',
+	},
+	{
+		duration: 1.75,
+		x: '100vw',
+		ease: 'power1.in',
+	}
+);
 
 // gsap.to('#shine2', { duration: 1, x: -150 });

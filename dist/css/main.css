@@ -148,6 +148,10 @@ body {
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #555;
+}
+
 .experience-wrapper {
 	overflow: hidden;
 	position: relative;

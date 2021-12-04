@@ -805,8 +805,10 @@
 				<clipPath id="clip2_1_">
 					<use xlink:href="#clip2" style="overflow:visible;" />
 				</clipPath>
-				<g id="shine2" style="opacity:0.5;clip-path:url(#clip2_1_);">
-					<polygon style="fill:#FFFFFF;" points="70.9,118.9 118.6,-1.4 210.3,-1.4 162.5,118.9 				" />
+				<g id="shine_mask_group" style="clip-path:url(#clip2_1_);">
+					<g id="shine2" style="opacity:0.5;">
+						<polygon style="fill:#FFffff;" points="70.9,118.9 118.6,-1.4 210.3,-1.4 162.5,118.9 				" />
+					</g>
 				</g>
 			</g>
 		</g>
@@ -824,16 +826,15 @@
 				<clipPath id="clip1_1_">
 					<use xlink:href="#clip1" style="overflow:visible;" />
 				</clipPath>
-				<g id="shine1" style="clip-path:url(#clip1_1_);">
-					<polygon style="fill:#FFFFFF;" points="24.4,118.9 72.1,-1.4 163.7,-1.4 116,118.9 				" />
+				<g id="" style="clip-path:url(#clip1_1_);">
+					<g id="shine1" style="">
+						<polygon style="fill:#FFFFFF;" points="24.4,118.9 72.1,-1.4 163.7,-1.4 116,118.9 				" />
+					</g>
 				</g>
 			</g>
 		</g>
 	</g>
 </svg>
-
-
-
 
 			</a>
 			<a class="lightboxify" href="dist/img/mafia_fbi.png">
@@ -2334,6 +2335,7 @@
 					</g>
 				</svg>
 			</a>
+			<div class="man"></div>
 		</div>
 	</div>
 </div>

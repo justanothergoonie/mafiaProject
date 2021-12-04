@@ -7,6 +7,13 @@ $ratioInv: 1 / $ratio;
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #555;
+	// background-image: url(/dist/img/1970.png);
+	// object-fit: contain;
+	// background-repeat: no-repeat;
+}
+
 .experience-wrapper {
 	overflow: hidden;
 	position: relative;
